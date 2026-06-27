@@ -1,23 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Beauty Glam - Tienda de Maquillaje</title>
+
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
     <header>
-        <h1>Bienvenido a mi página web</h1>
-        <p>Creada con GitHub Pages</p>
+
+        <div class="logo">
+            Beauty Glam
+        </div>
+
+        <nav>
+
+            <a href="#">Inicio</a>
+
+            <a href="#">Productos</a>
+
+            <a href="#">Categorías</a>
+
+            <a href="#">Nosotros</a>
+
+            <a href="#">Contacto</a>
+
+        </nav>
+
     </header>
 
-    <main>
-        <button onclick="mostrarMensaje()">Haz clic aquí</button>
-        <p id="mensaje"></p>
-    </main>
+    <section class="hero">
 
-    <script src="script.js"></script>
+        <div class="hero-text">
+
+            <h1>Realza tu belleza</h1>
+
+            <p>
+                Descubre maquillaje original de las mejores marcas.
+                Consulta el precio directamente por WhatsApp.
+            </p>
+
+            <a class="boton" href="#productos">
+                Ver Productos
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="productos">
+
+        <h2>Nuestros Productos</h2>
+
+        <div class="contenedor-productos">
+
+            <div class="producto">
+
+                <img src="https://via.placeholder.com/250x250.png?text=Producto" alt="Producto">
+
+                <h3>Base Líquida</h3>
+
+                <p>Acabado natural de larga duración.</p>
+
+                <a class="whatsapp"
+                    href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20de%20la%20Base%20Líquida."
+                    target="_blank">
+
+                    Consultar por WhatsApp
+
+                </a>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="https://via.placeholder.com/250x250.png?text=Producto" alt="Producto">
+
+                <h3>Labial Mate</h3>
+
+                <p>Disponible en varios tonos.</p>
+
+                <a class="whatsapp"
+                    href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20del%20Labial%20Mate."
+                    target="_blank">
+
+                    Consultar por WhatsApp
+
+                </a>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="https://via.placeholder.com/250x250.png?text=Producto" alt="Producto">
+
+                <h3>Paleta de Sombras</h3>
+
+                <p>Colores intensos y pigmentados.</p>
+
+                <a class="whatsapp"
+                    href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20de%20la%20Paleta%20de%20Sombras."
+                    target="_blank">
+
+                    Consultar por WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        © 2026 Beauty Glam | Todos los derechos reservados
+
+    </footer>
+
 </body>
+
 </html>
