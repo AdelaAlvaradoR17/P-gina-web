@@ -4,72 +4,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Glam - Tienda de Maquillaje</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <title>Starmoon Beauty | Tienda de Maquillaje</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Starmoon Beauty - Tienda de maquillaje original. Consulta los precios directamente por WhatsApp.">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
 
+    <!-- BOTON WHATSAPP -->
+
+    <a href="https://wa.me/50600000000"
+        class="whatsapp"
+        target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <!-- HEADER -->
+
     <header>
 
         <div class="logo">
-            Beauty Glam
+
+            <img src="img/logo.png" alt="Starmoon Beauty">
+
         </div>
 
         <nav>
 
-            <a href="#">Inicio</a>
+            <ul>
 
-            <a href="#">Productos</a>
+                <li><a href="#">Inicio</a></li>
 
-            <a href="#">Categorías</a>
+                <li><a href="#categorias">Categorías</a></li>
 
-            <a href="#">Nosotros</a>
+                <li><a href="productos.html">Productos</a></li>
 
-            <a href="#">Contacto</a>
+                <li><a href="#marcas">Marcas</a></li>
+
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
 
         </nav>
 
+        <div class="iconos">
+
+            <i class="fas fa-search"></i>
+
+            <i class="fas fa-bars menu"></i>
+
+        </div>
+
     </header>
+
+    <!-- HERO -->
 
     <section class="hero">
 
-        <div class="hero-text">
+        <div class="contenido-hero">
 
-            <h1>Realza tu belleza</h1>
+            <h1>
+
+                Descubre la magia del maquillaje
+
+            </h1>
 
             <p>
-                Descubre maquillaje original de las mejores marcas.
+
+                Productos originales de tus marcas favoritas.
+
                 Consulta el precio directamente por WhatsApp.
+
             </p>
 
-            <a class="boton" href="#productos">
-                Ver Productos
+            <a href="productos.html" class="boton">
+
+                Ver Catálogo
+
             </a>
 
         </div>
 
     </section>
 
-    <section id="productos">
+    <!-- CATEGORIAS -->
 
-        <h2>Nuestros Productos</h2>
+    <section id="categorias" class="categorias">
 
-        <div class="contenedor-productos">
+        <h2>
+
+            Categorías
+
+        </h2>
+
+        <div class="grid-categorias">
+
+            <div class="categoria">
+
+                <img src="img/categorias/labiales.jpg">
+
+                <h3>Labiales</h3>
+
+            </div>
+
+            <div class="categoria">
+
+                <img src="img/categorias/bases.jpg">
+
+                <h3>Bases</h3>
+
+            </div>
+
+            <div class="categoria">
+
+                <img src="img/categorias/sombras.jpg">
+
+                <h3>Sombras</h3>
+
+            </div>
+
+            <div class="categoria">
+
+                <img src="img/categorias/skincare.jpg">
+
+                <h3>Skincare</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+
+    <section class="destacados">
+
+        <h2>
+
+            Productos Destacados
+
+        </h2>
+
+        <div class="productos">
+
+            <!-- PRODUCTO -->
 
             <div class="producto">
 
-                <img src="https://via.placeholder.com/250x250.png?text=Producto" alt="Producto">
+                <span class="nuevo">
 
-                <h3>Base Líquida</h3>
+                    Nuevo
 
-                <p>Acabado natural de larga duración.</p>
+                </span>
 
-                <a class="whatsapp"
-                    href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20de%20la%20Base%20Líquida."
+                <img src="img/productos/base.jpg">
+
+                <h3>
+
+                    Base Fit Me
+
+                </h3>
+
+                <p>
+
+                    Maybelline
+
+                </p>
+
+                <a href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20de%20la%20Base%20Fit%20Me."
                     target="_blank">
 
                     Consultar por WhatsApp
@@ -78,16 +194,31 @@
 
             </div>
 
+            <!-- PRODUCTO -->
+
             <div class="producto">
 
-                <img src="https://via.placeholder.com/250x250.png?text=Producto" alt="Producto">
+                <span class="nuevo">
 
-                <h3>Labial Mate</h3>
+                    Top
 
-                <p>Disponible en varios tonos.</p>
+                </span>
 
-                <a class="whatsapp"
-                    href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20del%20Labial%20Mate."
+                <img src="img/productos/labial.jpg">
+
+                <h3>
+
+                    Labial Mate
+
+                </h3>
+
+                <p>
+
+                    Beauty Creations
+
+                </p>
+
+                <a href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20del%20Labial%20Mate."
                     target="_blank">
 
                     Consultar por WhatsApp
@@ -96,16 +227,31 @@
 
             </div>
 
+            <!-- PRODUCTO -->
+
             <div class="producto">
 
-                <img src="https://via.placeholder.com/250x250.png?text=Producto" alt="Producto">
+                <span class="nuevo">
 
-                <h3>Paleta de Sombras</h3>
+                    Bestseller
 
-                <p>Colores intensos y pigmentados.</p>
+                </span>
 
-                <a class="whatsapp"
-                    href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20de%20la%20Paleta%20de%20Sombras."
+                <img src="img/productos/paleta.jpg">
+
+                <h3>
+
+                    Paleta Nude
+
+                </h3>
+
+                <p>
+
+                    Ruby Rose
+
+                </p>
+
+                <a href="https://wa.me/50600000000?text=Hola,%20quiero%20consultar%20el%20precio%20de%20la%20Paleta%20Nude."
                     target="_blank">
 
                     Consultar por WhatsApp
@@ -118,11 +264,129 @@
 
     </section>
 
+    <!-- PROMOCION -->
+
+    <section class="promo">
+
+        <div class="promo-texto">
+
+            <h2>
+
+                ¡Nuevos ingresos cada semana!
+
+            </h2>
+
+            <p>
+
+                Sigue nuestras redes sociales para conocer promociones,
+
+                lanzamientos y colecciones exclusivas.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- MARCAS -->
+
+    <section id="marcas" class="marcas">
+
+        <h2>
+
+            Marcas
+
+        </h2>
+
+        <div class="logos-marcas">
+
+            <span>Maybelline</span>
+
+            <span>Ruby Rose</span>
+
+            <span>Beauty Creations</span>
+
+            <span>Italia Deluxe</span>
+
+            <span>Pink Up</span>
+
+        </div>
+
+    </section>
+
+    <!-- INSTAGRAM -->
+
+    <section class="instagram">
+
+        <h2>
+
+            Síguenos
+
+        </h2>
+
+        <p>
+
+            @Starmoon_Beauty
+
+        </p>
+
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="contacto">
+
+        <h2>
+
+            Contáctanos
+
+        </h2>
+
+        <p>
+
+            WhatsApp
+
+        </p>
+
+        <a href="https://wa.me/50600000000">
+
+            Escribir ahora
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
     <footer>
 
-        © 2026 Beauty Glam | Todos los derechos reservados
+        <div class="footer-logo">
+
+            <img src="img/logo.png">
+
+        </div>
+
+        <div class="footer-redes">
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+        </div>
+
+        <p>
+
+            © 2026 Starmoon Beauty | Todos los derechos reservados.
+
+        </p>
 
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
