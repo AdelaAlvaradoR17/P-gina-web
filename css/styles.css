@@ -1,1 +1,562 @@
+/* ==========================
+   STARMOON BEAUTY
+========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#faf7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/*==========================
+HEADER
+==========================*/
+
+header{
+    width:100%;
+    background:#5b2c6f;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 12px rgba(0,0,0,.12);
+}
+
+.logo img{
+    width:170px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.iconos{
+    display:flex;
+    gap:20px;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.menu{
+    display:none;
+}
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#5b2c6f,#8e44ad,#d7bde2);
+
+    color:white;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#d4af37;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 40px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.boton:hover{
+
+    background:#b48a18;
+
+    transform:translateY(-3px);
+
+}
+
+/*==========================
+SECCIONES
+==========================*/
+
+section{
+
+    padding:80px 8%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    color:#5b2c6f;
+
+    font-size:35px;
+
+    margin-bottom:50px;
+
+}
+
+/*==========================
+CATEGORIAS
+==========================*/
+
+.grid-categorias{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.categoria{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.categoria:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.categoria img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.categoria h3{
+
+    padding:20px;
+
+    color:#5b2c6f;
+
+}
+
+/*==========================
+PRODUCTOS
+==========================*/
+
+.productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.producto{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.producto:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.producto img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+.producto h3{
+
+    color:#5b2c6f;
+
+    padding:15px 20px 5px;
+
+}
+
+.producto p{
+
+    padding:0 20px 20px;
+
+    color:#666;
+
+}
+
+.producto a{
+
+    display:block;
+
+    background:#7d3c98;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.producto a:hover{
+
+    background:#d4af37;
+
+}
+
+.nuevo{
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    background:#d4af37;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+/*==========================
+PROMO
+==========================*/
+
+.promo{
+
+    background:#5b2c6f;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.promo h2{
+
+    color:white;
+
+}
+
+.promo p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/*==========================
+MARCAS
+==========================*/
+
+.logos-marcas{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+.logos-marcas span{
+
+    background:white;
+
+    padding:18px 30px;
+
+    border-radius:50px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    color:#5b2c6f;
+
+    font-weight:600;
+
+}
+
+/*==========================
+INSTAGRAM
+==========================*/
+
+.instagram{
+
+    text-align:center;
+
+    background:#f5eef8;
+
+}
+
+.instagram p{
+
+    font-size:24px;
+
+    color:#7d3c98;
+
+    margin-top:15px;
+
+}
+
+/*==========================
+CONTACTO
+==========================*/
+
+.contacto{
+
+    text-align:center;
+
+}
+
+.contacto a{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    background:#25d366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.contacto a:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+    background:#4a235a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+.footer-logo img{
+
+    width:150px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-redes{
+
+    margin:20px 0;
+
+}
+
+.footer-redes a{
+
+    color:#d4af37;
+
+    font-size:28px;
+
+    margin:0 12px;
+
+    transition:.3s;
+
+}
+
+.footer-redes a:hover{
+
+    color:white;
+
+}
+
+/*==========================
+WHATSAPP
+==========================*/
+
+.whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:32px;
+
+    text-decoration:none;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+    z-index:999;
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:900px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+}
